@@ -1,0 +1,11 @@
+:root {
+    --primary-color: red;
+    --secondary-color: orange;
+    --light-color:white;
+    --dark-color:grey;
+    --max-width:1100px;
+}
+.bg-dark {
+    background: var(--dark-color);
+    color: white;
+}
