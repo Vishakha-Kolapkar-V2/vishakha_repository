@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Details Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="header-section">
+        <div class="nav-section">
+            <nav id="navbar" class="row">
+                <div class="col">
+                    <h3 class="logo">
+                        <img src="/assets/lg-img.png" alt="Company Logo">
+                        EMPLOYEE DASHBOARD
+                    </h3>
+                </div>
+                <div class="col">
+                    <ul>
+                        <li><a href="/components/about-us/about.html">About Us</a></li>
+                        <li><a href="/components/contact-us/contact.html">Contact Us</a></li>
+                        
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!--  -->
+    <div class="container">
+        <h2>
+            EMPLOYEE REGISTRATION FORM
+        </h2>
+        <form action="">
+            <!-- firstname & lastname -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="text" id="fname" placeholder="First Name" required>
+                </div>
+                <div class="box">
+                    <input type="text" id="lname" placeholder="Last Name" required>
+                </div>
+            </div>
+            <!-- email-id & mobile number -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="email" id="email" placeholder="Email-ID" required>
+                </div>
+                <div class="box">
+                    <input type="number" id="mobile" placeholder="Mobile Number" required>
+                </div>
+            </div>
+            <!-- company name & designation -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="text" id="cname" placeholder="Company Name" required>
+                </div>
+                <div class="box">
+                    <select required>
+                        <option value="" disable selected>Designation</option>
+                        <option value="ase">Associate Software Engineer</option>
+                        <option value="jse">Junior Software Engineer</option>
+                        <option value="sse">Senior Software Engineer</option>
+                        <option value="lse">Lead Software Engineer</option>
+                    </select>
+                </div>
+            </div>
+            <!-- department name & progress -->
+            <div class="wrap">
+                <div class="box">
+                    <input type="search" id="dname" name="dname" placeholder="Search department name" required>
+                    <button type="button" class="btn btn-primary">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="box">
+                    <input type="text" placeholder="MM/DD/YYYY" onfocus="(this.type='date')"
+                        onblur="(this.type='text')">
+                </div>
+            </div>
+            <!-- gender & city -->
+            <div class="container-two">
+                <div class="wrap-two">
+                    <div class="box-two">
+                        <label for="gender">Gender</label><br>
+                        <input type="radio" name="gender" id="gender"><label for="gender">Female</label>
+                        <input type="radio" name="gender" id="gender"><label for="gender">Male</label>
+                    </div>
+                </div>
+                <div class="wrap-two">
+                    <div class="box-two">
+                        <label for="city">City</label>
+                        <div class="check">
+                            <input type="checkbox" id="city" checked><label for="city">Mumbai</label>
+                            <input type="checkbox" id="ciy"><label for="city">Pune</label>
+                            <input type="checkbox" id="city"><label for="city">Other</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- description -->
+            <div class="wrap">
+                <div class="box">
+                    <textarea name="description" id="description" cols="100" rows="10" placeholder="Description"
+                        required></textarea>
+                </div>
+            </div>
+            <!-- submit & reset -->
+            <div class="btn-two">
+                <a href="/components/dashboard/dashboard.html"><input type="button" value="Submit Now"></a>
+                <input type="reset" value="Reset Now">
+            </div>
+        </form>
+    </div>
+    <footer id="footer" class="bg-dark">
+        <div class="social">
+            <i class="fab fa-facebook"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-youtube"></i>
+            <i class="fab fa-linkedin"></i>
+        </div>
+        <p>Copyright &copy; 2023 all rights reserved - V2Solutions Pvt Ltd.</p>
+        <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
