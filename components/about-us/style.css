@@ -10,15 +10,88 @@ body {
     line-height: 1.6;
 }
 
-header {
-    background-color: #333;
+
+.header-section {
+    background-color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    padding: 0 20px; 
+}
+
+.logo {
+    color: white;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+/* Header */
+.header-section {
+    background-color: #2c3e50;
+    /* padding: 20px 0; */
+}
+
+.logo img {
+    max-height: 40px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+h3{
+    color: black;
+}
+.logo h3 {
     color: #fff;
-    text-align: center;
-    padding: 1rem;
+    font-family: 'Cinzel', serif;
+    font-size: 24px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar {
+    display: flex;
+    align-items: center;
+    /* color: white; */
+    padding: 0 30px;
+    width: 100%;
+    justify-content: space-between;
+}
+#navbar ul li a {
+    color: white;
+}
+/* Navigation */
+#navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #666;
 }
 
 main {
-    max-width: 960px;
+    /* max-width: 960px; */
     margin: 0 auto;
     padding: 2rem;
 }
@@ -27,9 +100,13 @@ main {
     margin-bottom: 2rem;
 }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+h1 {
+    text-shadow: 2px 2px gray;
+    font-size: xxx-large;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+    border-width: thin;
+
 }
 
 p {
@@ -38,8 +115,9 @@ p {
 
 ul {
     list-style: none;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
+    text-align: center;
 }
 
 li {
@@ -52,6 +130,7 @@ img {
     height: 150px;
     border-radius: 50%;
     margin-bottom: 0.5rem;
+    padding-top: 10px
 }
 
 /* social */
@@ -93,4 +172,9 @@ img {
 }
 #footer ul li a:hover {
     color: #ccc;
+}
+@media (max-width: 580px){
+    #navbar ul{
+        display: inherit;
+    }
 }

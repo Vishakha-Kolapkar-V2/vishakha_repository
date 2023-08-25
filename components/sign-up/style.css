@@ -226,3 +226,9 @@ input[type="reset"]:hover {
         flex-direction: column;
     }
 }
+@media (max-width: 552px) {
+    #navbar ul {
+        /* flex: none; */
+        display: inherit;
+    }
+    }

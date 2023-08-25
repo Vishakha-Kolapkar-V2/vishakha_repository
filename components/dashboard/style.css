@@ -17,6 +17,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.5;
+    background-color: #f2f2f2;
 }
 
 /* Header */
@@ -190,11 +191,13 @@ h3 {
     padding: 10px 20px;
     background-color: #f8f8f8;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
    
 }
-
+span {
+    color: lightgray;
+}
 .card__footer a {
     text-decoration: none;
     color: #333;
@@ -245,4 +248,16 @@ h3 {
 
 #footer ul li a:hover {
     color: #ccc;
+}
+
+/* Media query */
+
+@media (max-width: 500px) {
+    .col-md-6 {
+        width: 100%;
+        flex: none;
+    }
+    #navbar ul {
+       display: inherit;
+    }    
 }

@@ -13,7 +13,7 @@ body {
 .container {
     /* max-width: 800px; */
     margin: 0 auto;
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .header-section {
@@ -28,12 +28,6 @@ body {
     align-items: center;
     width: 100%;
     padding: 0 20px; 
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
 }
 
 .logo img {
@@ -102,10 +96,10 @@ h3{
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-    margin-top: 20px;
+    width: 100%;
+    /* margin-top: 20px;
     max-width: 800px;
-    /* display: flex; */
-    margin-left: 22%;
+    margin-left: 22%; */
 
 }
 
@@ -207,4 +201,20 @@ input[type="password"] {
 }
 #footer ul li a:hover {
     color: #ccc;
+}
+
+/* media query */
+@media (max-width: 648px) {
+    #navbar ul {
+       display: inherit;
+    }    
+    img {
+        width: 400px;
+    }
+}
+@media  (max-width: 422px) {
+    img {
+        width: 200px;
+    }
+    
 }

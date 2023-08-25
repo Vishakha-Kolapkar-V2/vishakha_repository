@@ -37,9 +37,7 @@ body {
 }
 
 .logo {
-    display: flex;
-    align-items: center;
-    font-size: 1.5rem;
+    color: white;
 }
 
 .logo img {
@@ -109,9 +107,8 @@ h3{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     margin-top: 20px;
-    max-width: 800px;
-    /* display: flex; */
-    margin-left: 22%;
+    max-width: 700px;
+    margin: 2% 25%;
 
 }
 
@@ -215,3 +212,10 @@ input[type="password"] {
 #footer ul li a:hover {
     color: #ccc;
 }
+ /* media query */
+ @media (max-width: 500px) {
+    #navbar ul {
+        /* flex: none; */
+        display: inherit;
+    }
+    }
